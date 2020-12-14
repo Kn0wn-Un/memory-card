@@ -22,12 +22,12 @@
     padding: 5vw;
 }
 .card {
-    height: 250px;
+    height: 300px;
     width: 250px;
     text-align: center;
     font-size: 50px;
     background-color: salmon;
-    margin: 10px;
+    margin: 15px 10px;
 }
 .card:hover {
     transform: scale(1.1);
