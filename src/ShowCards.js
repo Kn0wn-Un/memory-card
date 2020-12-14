@@ -2,6 +2,18 @@ import { useState } from 'react';
 import './styles.css';
 function ShowCards(props) {
     let [array, setArray] = useState(props.arr);
+    const [clicked, setClicked] = useState([]);
+    console.log(clicked);
+    const checkClicked = (ele) => {
+        if (clicked.indexOf(ele) === -1) {
+            props.handler(props.score + 1);
+            clicked.push(ele);
+            setClicked(clicked);
+        } else {
+            props.handler(0);
+            setClicked([]);
+        }
+    };
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
             var j = Math.floor(Math.random() * (i + 1));
@@ -17,7 +29,7 @@ function ShowCards(props) {
                 className="card"
                 key={index}
                 onClick={() => {
-                    props.handler(props.score + 1);
+                    checkClicked(ele);
                     setArray(shuffleArray(array));
                 }}
             >
