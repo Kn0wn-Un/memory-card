@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import ShowCards from './ShowCards';
+import heroes from './heroes';
 function App() {
     const arr = [...Array(12).keys()];
     const [score, setScore] = useState(0);
@@ -22,7 +23,7 @@ function App() {
     return (
         <div className="App">
             <NavBar score={score} highScore={highS} />
-            <ShowCards arr={arr} handler={checkClicked} score={score} />
+            <ShowCards arr={heroes} handler={checkClicked} score={score} />
         </div>
     );
 }

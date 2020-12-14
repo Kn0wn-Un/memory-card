@@ -15,13 +15,14 @@ function ShowCards(props) {
         return (
             <div
                 className="card"
-                key={index}
+                key={ele.id}
                 onClick={() => {
-                    props.handler(ele);
+                    props.handler(ele.id);
                     setArray(shuffleArray(array));
                 }}
             >
-                {ele}
+                <img src={ele.img} alt={ele.name}></img>
+                {ele.name}
             </div>
         );
     });
