@@ -15,7 +15,7 @@ const heroes = [
         id: 3,
         name: 'Spider-man',
         img:
-            'https://static.wikia.nocookie.net/spiderman/images/a/ad/Peter_Parker_%28Earth-616%29_017.png/revision/latest/scale-to-width-down/340?cb=20150729001942',
+            'https://i.pinimg.com/originals/37/01/ab/3701ab4d685e7ccc686bef3714b80275.png',
     },
     {
         id: 4,
@@ -68,7 +68,7 @@ const heroes = [
         id: 12,
         name: 'Cat Woman',
         img:
-            'https://static.wikia.nocookie.net/all-worlds-alliance/images/9/9c/4cf473c54d2459b42e8159b0aa29a8c9.png/revision/latest?cb=20190305072629',
+            'https://lh3.googleusercontent.com/proxy/ePNM3TDTb_aDK5oGKdVTXKY_PXG-q_U4H9h5UDXMHE2IrgRx87WVVD9B7ZDZDb_n0qO3lVkSBTIM3eDSgMZvsddozyGGP7ZHtBCwsTiN7ApHhIGoClbKXErsKD22-aA6MmQXUVFKbf2Jvxc',
     },
 ];
 
