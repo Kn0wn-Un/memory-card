@@ -7,11 +7,12 @@ function NavBar(props) {
             <div className="nav-wrapper">
                 <h1>Memory Card</h1>
                 <div className="navigation">
-                    <div>High Score: {props.highScore}</div>
-                    <div>Score: {props.score}</div>
+                    <span>Score: {props.score} | </span>
+                    <span>Best: {props.highScore}</span>
                 </div>
                 <div
                     className="navigation"
+                    style={{ cursor: 'pointer' }}
                     onClick={() => {
                         setInst(!inst);
                     }}
@@ -21,8 +22,8 @@ function NavBar(props) {
             </div>
             {inst ? (
                 <div className="info">
-                    How to play: Cards Shuffle everytime you click on one, Don't
-                    click on the same card twice easy :)
+                    Cards Shuffle everytime you click on one, Don't click on the
+                    same card twice easy :)
                 </div>
             ) : null}
         </nav>
