@@ -1,6 +1,6 @@
 # Introduction
 
-Memory card game using only functional components in REact to practice Hooks (useState and useEffect)
+Memory card game using only functional components in React to practice Hooks (useState and useEffect)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
